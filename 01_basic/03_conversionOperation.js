@@ -1,3 +1,5 @@
+//----------------------------------|Conversion|------------------------------------------//
+
 let score = 100; //number
 
 let scoreAsString = String(score); //convert number to string
@@ -19,3 +21,24 @@ console.log("============")
 let stringToBoolean = Boolean(booleanToString); //convert string back to boolean
 console.log(stringToBoolean); //output: true
 console.log(typeof stringToBoolean); //output: "boolean"
+
+//----------------------------------|Operations|------------------------------------------//
+
+let value=10
+let negValue=-value //negation
+console.log(negValue) //output: -10
+
+console.log("============")
+let incrementValue=++value //increment
+console.log(incrementValue) //output: 11
+
+console.log("============")
+let str1="Hello"
+let str2="World"
+let str3=str1+" "+str2 //concatenation
+console.log(str3) //output: "Hello World"
+
+console.log("============")
+console.log("1"+2) //output: "12"
+console.log(1+"2") //output: "12"
+console.log(1+2+"3") //output: "33"
