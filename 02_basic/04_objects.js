@@ -28,3 +28,5 @@ console.log(obj4);
 
 console.log(Object.keys(obj4)); //Get all the keys of the object
 console.log(Object.values(obj4)); //Get all the values of the object
+console.log(Object.entries(obj4)); //Get all the key-value pairs of the object
+console.log(Object.hasOwnProperty(obj4,"key1")); //Check if the object has a specific key
