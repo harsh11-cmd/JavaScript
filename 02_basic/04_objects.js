@@ -30,3 +30,13 @@ console.log(Object.keys(obj4)); //Get all the keys of the object
 console.log(Object.values(obj4)); //Get all the values of the object
 console.log(Object.entries(obj4)); //Get all the key-value pairs of the object
 console.log(Object.hasOwnProperty(obj4,"key1")); //Check if the object has a specific key
+
+const course={
+    name: "JavaScript",
+    Price: 899,
+    InstructorName: "Harsh Dabhi"
+}
+
+console.log(course.name);
+const {InstructorName: Instructor}=course;
+console.log(Instructor);
