@@ -27,8 +27,15 @@
         const totalMarks=(document.querySelector('#totalMarks').value);
         const percentage=document.querySelector('#percentage');
 
-       const percentageValue=((marksObtained/totalMarks)*100).toFixed(2);
-       percentage.innerHTML=`Your Percentage is : ${percentageValue}%`;
+        if(marksObtained>totalMarks || marksObtained<0 || isNaN(marksObtained) || isNaN(totalMarks) || totalMarks<=0){
+            percentage.innerHTML="Invalid input values";
+            return;
+        }
+        else{
+            const percentageValue=((marksObtained/totalMarks)*100).toFixed(2);
+             percentage.innerHTML=`Your Percentage is : ${percentageValue}%`;
+        }
+       
        
 
     })
