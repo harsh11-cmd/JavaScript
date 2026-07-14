@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>DOM File</title>
+    </head>
+    <body>
+        <div class="bg-black">
+            <h1 id="title" class="heading">Dom Learning</h1>
+            <p>Hello Welcome to Dom learning.</p>
+            <ul>
+                <li>Dom stands for Document Object Model</li>
+                <li>Dom is a programming interface for web documents</li>
+                <li>Dom represents the page so that programs can change the document structure, style, and content</li>
+            </ul>
+        </div>
+    
+    </body>
+</html>
+
+ <!-- document.getElementById("title") // to get the element by id
+ document.getElementsByClassName("heading") // to get the element by class name
+ document.getElementsByTagName("h1") // to get the element by tag name
+ document.querySelector("#title") // to get the element by id
+ document.querySelectorAll(".heading") // to get the element by class name
+
+ document.getElementByI("ul") -->   
+
+ <!-- document.querySelector("ul") -->
+<!-- <ul>​<li style=​"background-color:​ green;​">​…​</li>​<li>​…​</li>​<li>​…​</li>​</ul>​
+const myul = document.querySelector("ul")
+undefined
+myul
+<ul>​…​</ul>​
+const myul = document.querySelector("li")
+undefined
+myul
+<li style=​"background-color:​ green;​">​::marker​"Dom stands for Document Object Model"</li>​
+const turngreen = myul.style.backgroundColor = "green"
+undefined
+const turngreen = myul.style.padding = "15x"
+undefined
+const turngreen = myul.innerText = "Five" -->
+
+<!-- queryselector is return a single and first elecment of the document which you are trying to select
+  if you want to select all the element then you can use queryselectorall  and if you use queryselector all and get the all element
+   nd then store them to a variabe and print them for edit and manupulate but this not happened coz the variable work as an array so 
+   we want to also give a inner index value and then can apply styles or modifications & we can also use foreach loop for Example: -->
+
+   <!-- const myul = document.querySelectorAll("li")
+    myul[0].style.backgroundColor = "green" -->
