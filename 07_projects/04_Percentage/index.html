@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Percentage</title>
+</head>
+<body>
+    <div class="center">
+        <form>
+            Marks Obtained: <input type="number" id="marksObtained" required><br><br>
+            Total Marks: <input type="number" id="totalMarks" required><br><br>
+            <input type="submit" id="calculate" value="Calculate Percentage">
+            <h1 id="percentage"></h1>
+         </form>   
+    </div>
+    
+</body>
+<script>
+
+    const getFormdata=document.querySelector('form');
+
+    getFormdata.addEventListener('submit',function(e){
+        e.preventDefault();
+
+        const marksObtained=(document.querySelector('#marksObtained').value);
+        const totalMarks=(document.querySelector('#totalMarks').value);
+        const percentage=document.querySelector('#percentage');
+
+       const percentageValue=((marksObtained/totalMarks)*100).toFixed(2);
+       percentage.innerHTML=`Your Percentage is : ${percentageValue}%`;
+       
+
+    })
+
+    
+</script>
+</html>
