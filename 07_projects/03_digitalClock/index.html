@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Digital Clock</title>
+</head>
+<body>
+    <div class="center">
+        <h3 id="banner">Your Time Is:</h3>
+        <h1 id="clock"></h1>
+    </div>
+    
+</body>
+<script>
+    document.getElementById('clock');
+   
+        setInterval(function(){
+            const date=new Date();
+            clock.innerHTML=date.toLocaleTimeString();
+        },1000)
+</script>
+</html>
