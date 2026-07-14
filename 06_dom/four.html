@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM element Remove and Edit</title>
+</head>
+<body>
+    
+        <ul class="language">
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>Java</li>
+            <li>C++</li>
+        </ul>
+   
+    
+</body>
+<script>
+    //how to add list item to the ul using function 
+    function addListItem(language){
+        const li=document.createElement("li");
+        li.innerHTML=`${language}`;
+        document.querySelector(".language").appendChild(li); // how to add the new element to the DOM using appendChild method
+    }
+    addListItem("C#");
+
+    // edit
+
+    const secondlan=document.querySelector("li:nth-child(2)");
+    secondlan.innerHTML="Python3"; // how to edit the element using innerHTML
+
+    // remove
+    document.querySelector("li:nth-child(3)").remove(); // how to remove the element using remove() method
+    //const thirdlan=document.querySelector("li:nth-child(3)");
+    //thirdlan.remove(); // how to remove the element using remove() method
+</script>
+</html>
