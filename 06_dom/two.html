@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <div class="parent" style="background-color: black; color: white;">
+        <div class="child1">child1</div>
+        <div class="child2">child2</div>
+        <div class="child3">child3</div>
+        <div class="child4">child4</div>
+    </div>
+    
+</body>
+<script>
+     const parent = document.querySelector(".parent")
+    // console.log(parent)
+    // console.log(parent.children)
+    // console.log(parent.children[0].innerText)
+
+    // for(let i=0;i<parent.children.length;i++){
+    //     console.log(parent.children[i].innerText);
+    // }
+    console.log(parent.children[1].style.backgroundColor="green")
+    // console.log(parent.firstElementChild);
+    // console.log(parent.lastElementChild);
+
+    const child1 = document.querySelector(".child1");
+    console.log(child1)
+    console.log(child1.parentElement) // how to get parent element of the child1
+    console.log(child1.nextElementSibling) // how to get next sibling of the child1
+
+    console.log("Nodes: " , parent.childNodes) // how to get all the nodes of the parent
+
+
+</script>
+</html>
