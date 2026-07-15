@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- A readystate property returns the state an xmlHttpRequest client is in 
+    Ready state values are: 
+    0 : UNSENT - Client has been created. open() not called yet.
+    1 : OPENED - open() has been called.
+    2 : HEADERS_RECEIVED - send() has been called, and headers and status are available.
+    3 : LOADING - Downloading; responseText holds partial data.
+    4 : DONE - The operation is complete. -->
+</body>
+<script>
+
+    //how we can make API Request 
+    //1. Create an XMLHttpRequest object 
+    //2. Open a connection and a open() method takes 2 parameters: method and url(where we want to send the request)
+    //3. check the readystate and status of the request. using onreadystatechange property
+    //3. Send the request   
+
+  const url = 'https://api.github.com/users/harsh11-cmd';
+  let xhr=new  XMLHttpRequest();
+  xhr.open('GET',url);
+  xhr.onreadystatechange=function(){
+    if(xhr.readyState===4 && xhr.status===200){
+        console.log(xhr.responseText);
+    }
+  }
+  xhr.send();
+</script>
+</script>
+</html>
