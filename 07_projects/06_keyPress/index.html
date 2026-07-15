@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To know which key pressed on Keyboard</title>
+</head>
+<body>
+    <div id="main">
+        <h1>To know which key pressed on Keyboard</h1>
+        <input type="text" id="inputBox" placeholder="Type something here...">
+        <p id="output"></p>
+    </div>
+</body>
+<script>
+    document.querySelector('#main').addEventListener('keydown',function(e){
+        document.querySelector('#output').innerHTML = 
+        `key pressed is : ${e.key} and key code is : ${e.keyCode} and code is : ${e.code}`;
+    })
+</script>
+</html>
